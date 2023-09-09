@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<div class="form">
+        <p id="heading">New User</p>
+        <form id="file-upload-form" class="uploader">
+            <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+          
+            <label for="file-upload" id="file-drag">
+              <img id="file-image" src="#" alt="Preview" class="hidden">
+              <div id="start">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <div id="notimage" class="hidden">Please select an image</div>
+                <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+              </div>
+              <div id="response" class="hidden">
+                <div id="messages"></div>
+              </div>
+            </label>
+          </form>
+        <div class="field">
+        <i class="fa-solid fa-user"></i>
+        <input placeholder="name:" class="input-field name" type="text">
+        </div>
+        <div class="field">
+        <i class="fa-solid fa-phone"></i>
+        <input placeholder="number:" class="input-field number" type="text">
+        </div>
+        <div class="field">
+        <i class="fa-solid fa-location-dot"></i>
+        <input placeholder="address:" class="input-field address" type="text">
+        </div>
+        <div class="field">
+        <i class="fa-solid fa-calendar-days"></i>
+        <input placeholder="year:" class="input-field year" type="text">
+        </div> 
+        <button class="button2" id="submit">Submit</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
